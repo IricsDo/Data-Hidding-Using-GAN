@@ -4,12 +4,11 @@ Project này dựa trên bài báo gốc https://arxiv.org/pdf/1901.03892.pdf v�
 Mọi sao chép cần ghi rõ nguồn.
 
 # I. TÓM TẮT
-
 Sau khi kham khảo source code ở https://github.com/DAI-Lab/SteganoGAN, tôi quyết định xây dựng một giao diện để người dùng có thể thao tác trực quan hơn.
 
 *Toàn bộ project được thực hiện trên hệ điều hành linux - Ubuntu 18.04, cấu hình phần cứng là CPU Intel i5 8th Gen, 12G RAM. GPU GeForce MX 130, 2G RAM.*
 
-# II. HƯỚNG DẪN SỬ DỤNG GIAO DIỆN.
+# II. HƯỚNG DẪN SỬ DỤNG GIAO DIỆN
 Giao diện được viết bằng thư viện Tkinter.
 ## 1. Chuẩn bị thư viện
 	
@@ -25,24 +24,7 @@ Chạy câu lệnh sau ở trong thư mục vừa tải về.
 	python3 main.py
 Sẽ thấy một giao diện xuất hiện giống như sau
 
-----------------------------------------------------------------------------------------------------------------
-|                                                                                                               |
-|                                                                                                               |
-|                                                                                                               |
-|                                                                                                               |
-|                                                                                                               |
-|                                                                                                               |
-|                                                                                                               |
-|                                                                                                               |
-|                                                                                                               |
-|                                                                                                               |
-|                                                                                                               |
-|                                                                                                               |
-|                                                                                                               |
-|                                                                                                               |
-
------------------------------------------------------------------------------------------------------------------
-
+ ![This is the main window you see](/images/2.png)
 
 Giao diện gồm có các nút chức năng sau và cách hoạt động:
 + Load image cover: Thực hiện chọn ảnh muốn giấu thông tin vào đó. Đường dẫn trực tiếp của ảnh sẽ được hiển thị kế bên.
@@ -85,7 +67,11 @@ Chọn chế độ giấu tin là văn bản để sử dụng các chức năng
 
 Khi chọn chế độ giấu tin là hình ảnh, trước khi thực hiện nhấn nút Encoder cần phải:
 
-Nhấn Open image: Xuất hiện một giao diện thứ hai. Ở giao diện này có các nút sau:
+Nhấn Open image: Xuất hiện một giao diện thứ hai giống như sau
+
+![This is the second window you see](/images/1.png)
+
+Ở giao diện này có các nút sau:
 
 + Open image: Thực hiện chọn hình ảnh cần giấu. Đường dẫn trực tiếp của hình ảnh sẽ được hiển thị kế bên.
 + Open text: Thực hiện chọn tệp txt, đó chính là hình ảnh đang ở dạng văn bản. Đường dẫn trực tiếp của hình ảnh sẽ được hiển thị kế bên.
@@ -104,4 +90,5 @@ rồi mới nhấn nút Tex2Im.
 # III. HẠN CHẾ
 Theo bài báo, mô hình cho kết quả tốt nhất là **Dense Encoder**. Tuy nhiên do phần cứng của máy tôi không đủ tốt, tôi chỉ chạy được những mô hình **Basic Encoder** do đó một số kết quả của hình ảnh sau khi *Enconder* tôi đưa cho bạn có chất lượng không được tốt.
 
+Những mô hình pre-train các bạn thấy ở thư mục models là do tôi đã sử dụng Google Colab Pro để huấn luyện. Nhưng đa số chỉ huấn luyện với một vài vòng lặp cho nên mô hình chưa được tối ưu nhất. Bạn có thể không sử dụng các mô hình này của tôi, mà tự tay mình huấn luyện mô hình khác tốt hơn. Bạn có thể kham khảo cách huấn luyện tại source gốc (https://github.com/DAI-Lab/SteganoGAN).
 
