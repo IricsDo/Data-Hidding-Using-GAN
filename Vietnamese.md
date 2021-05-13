@@ -34,9 +34,10 @@ Giao diện gồm có các nút chức năng sau và cách hoạt động:
 	- Hình ảnh sẽ được lưu mặc định ở ***../SteganoGAN/research/***
 	- Hình ảnh sẽ được hiển thị bên dưới dòng chữ: Cover Image
 + Load model : Thực hiện chọn mô hình cho việc giấu thông tin. Đường dẫn trực tiếp của mô hình sẽ được hiển thị kế bên.
+	- Mặc định các pre-train sẽ được lưu ở ***../SteganoGAN/models/***
 + Encoder : Thực hiện giấu tin với ảnh và mô hình đã chọn.
 	- Hình ảnh sau khi giấu tin sẽ được hiển thị ở bên dưới dòng chữ: Steganographic 
-	- và được lưu ở thư mục có đường dẫn là ***../SteganoGAN/result/-/***
+	- Và được lưu ở thư mục có đường dẫn là ***../SteganoGAN/result/-/***
 + Decoder : Thực hiện giải mã thông tin với ảnh vừa giấu.
 + Evaluate: Thực hiện đánh giá với ảnh đã được giấu thông tin. Các thông số đánh giá gồm:
 
