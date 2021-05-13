@@ -63,7 +63,7 @@ Bên dưới Message decode là nơi thông tin được giải mã sẽ hiển 
 
 	- Ô trống đầu tiên phía dưới là nơi hiển thị đường dẫn tới tệp txt muốn giấu.
 	- Ô trống thứ hai sẽ là nơi hiển thị đường dẫn tới tệp txt đã được giải mã.
-	- Tệp txt được lưu mặc định ở thư mục có đường đãn là ***../SteganoGAN/message/***
+	- Tệp txt được lưu mặc định ở thư mục có đường dẫn là ***../SteganoGAN/message/***
 
 Có hai tùy chọn chế độ giấu tin cho người dùng là giấu tin là văn bản hoặc giấu tin là hình ảnh. Click chuột để chọn chế độ người dùng muốn sử dụng.
 
@@ -95,6 +95,8 @@ rồi mới nhấn nút Tex2Im.
 Theo bài báo, mô hình cho kết quả tốt nhất là **Dense Encoder**. Tuy nhiên do phần cứng của máy tôi không đủ tốt, tôi chỉ chạy được những mô hình **Basic Encoder** do đó một số kết quả của hình ảnh sau khi *Enconder* tôi đưa cho bạn có chất lượng không được tốt.
 
 Những mô hình pre-train các bạn thấy ở thư mục models là do tôi đã sử dụng Google Colab Pro để huấn luyện. Nhưng đa số chỉ huấn luyện với một vài vòng lặp cho nên mô hình chưa được tối ưu nhất. Bạn có thể không sử dụng các mô hình này của tôi, mà tự tay mình huấn luyện mô hình khác tốt hơn. Bạn có thể kham khảo cách huấn luyện tại source gốc (https://github.com/DAI-Lab/SteganoGAN).
+
+Hoặc bạn có thể sử dụng các mô hình pre-train mà tác giả cung cấp, bao gồm 3 loại: Basic, Dense và Residual. Được traing với data_deep = 6 ( Số bit trên một pixel tính theo lý thuyết ).
 
 ## Trích dẫn
 Nếu bạn sử dụng SteganoGAN cho nghiên cứu của mình, vui lòng xem xét trích dẫn công việc sau:
