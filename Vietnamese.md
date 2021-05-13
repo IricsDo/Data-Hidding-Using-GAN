@@ -92,3 +92,20 @@ Theo bài báo, mô hình cho kết quả tốt nhất là **Dense Encoder**. Tu
 
 Những mô hình pre-train các bạn thấy ở thư mục models là do tôi đã sử dụng Google Colab Pro để huấn luyện. Nhưng đa số chỉ huấn luyện với một vài vòng lặp cho nên mô hình chưa được tối ưu nhất. Bạn có thể không sử dụng các mô hình này của tôi, mà tự tay mình huấn luyện mô hình khác tốt hơn. Bạn có thể kham khảo cách huấn luyện tại source gốc (https://github.com/DAI-Lab/SteganoGAN).
 
+## Trích dẫn
+Nếu bạn sử dụng SteganoGAN cho nghiên cứu của mình, vui lòng xem xét trích dẫn công việc sau:
+
+Zhang, Kevin Alex and Cuesta-Infante, Alfredo and Veeramachaneni, Kalyan. SteganoGAN: High Capacity Image Steganography with GANs. MIT EECS, January 2019.([PDF](https://arxiv.org/pdf/1901.03892.pdf))
+> @article{zhang2019steganogan,
+> 
+> title={SteganoGAN: High Capacity Image Steganography with GANs},
+> 
+> author={Zhang, Kevin Alex and Cuesta-Infante, Alfredo and Veeramachaneni, Kalyan},
+> 
+> journal={arXiv preprint arXiv:1901.03892},
+> 
+> year={2019},
+> 
+> url={https://arxiv.org/abs/1901.03892}
+> 
+> }
