@@ -11,8 +11,11 @@ Sau khi kham khảo source code ở https://github.com/DAI-Lab/SteganoGAN, tôi 
 # II. HƯỚNG DẪN SỬ DỤNG GIAO DIỆN
 Giao diện được viết bằng thư viện Tkinter.
 ## 1. Chuẩn bị thư viện
-	
-	pip install -r requirement.txt
+Môi trường được sử dụng trong project được tạo bởi **Anaconda**. Bạn có thể tải về và cài đặt ở đường link ***[anaconda](https://www.anaconda.com/products/individual)***
+
+	$ conda create -n myenv python=3.6
+	$ conda activate myenv
+	$ pip install -r requirement.txt
 ## 2. Thay đổi đường dẫn làm việc	
 Trong file main.py ở dòng 471 thay đường dẫn tới thư mục SteganoGAN được lưu (fullpath_work).
 
