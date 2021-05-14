@@ -112,6 +112,6 @@ Zhang, Kevin Alex and Cuesta-Infante, Alfredo and Veeramachaneni, Kalyan. Stegan
 > 
 > year={2019},
 > 
-> url={https://arxiv.org/abs/1901.03892}
+> url={https://arxiv.org/abs/1901.03892 }
 > 
 > }
