@@ -23,7 +23,7 @@ The environment use in the project was created by Anaconda. You can download and
 	$ cd Data-Hidding-Using-GAN/
 	$ conda create -n myenv python=3.6
 	$ conda activate myenv
-	$ pip install -r requirement.txt
+	$ pip install -r requirements.txt
 
 ## 2. Change working path
 
