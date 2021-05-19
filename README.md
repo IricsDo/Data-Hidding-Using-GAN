@@ -20,6 +20,7 @@ The interface is written by the Tkinter library.
 
 The environment use in the project was created by Anaconda. You can download and install it at the link [anaconda](https://www.anaconda.com/products/individual)
 
+	$ cd Data-Hidding-Using-GAN/
 	$ conda create -n myenv python=3.6
 	$ conda activate myenv
 	$ pip install -r requirement.txt
