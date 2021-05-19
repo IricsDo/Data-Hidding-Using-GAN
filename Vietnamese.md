@@ -17,9 +17,10 @@ Môi trường được sử dụng trong project được tạo bởi **Anacond
 	$ conda activate myenv
 	$ pip install -r requirement.txt
 ## 2. Thay đổi đường dẫn làm việc	
-Trong *file main.py* ở **dòng 471** thay đường dẫn tới thư mục SteganoGAN được lưu (fullpath_work).
+~~Trong *file main.py* ở **dòng 471** thay đường dẫn tới thư mục SteganoGAN được lưu (fullpath_work).~~
 
-Trong *file second_window.py* ở **dòng 19** thay đường dẫn tới thư mục SteganoGAN lưu (fullpath_work).
+~~Trong *file second_window.py* ở **dòng 19** thay đường dẫn tới thư mục SteganoGAN lưu (fullpath_work).~~
+***Cập nhật mới !*** Không cần thay đổi đường dẫn!.
 ## 3. Cách dùng giao diện
 
 Chạy câu lệnh sau ở trong thư mục vừa tải về.
