@@ -13,6 +13,7 @@ Giao diện được viết bằng thư viện Tkinter.
 ## 1. Chuẩn bị thư viện
 Môi trường được sử dụng trong project được tạo bởi **Anaconda**. Bạn có thể tải về và cài đặt ở đường link ***[anaconda](https://www.anaconda.com/products/individual)***
 
+	$ cd Data-Hidding-Using-GAN/
 	$ conda create -n myenv python=3.6
 	$ conda activate myenv
 	$ pip install -r requirement.txt
