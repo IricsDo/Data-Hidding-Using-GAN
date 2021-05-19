@@ -26,9 +26,11 @@ The environment use in the project was created by Anaconda. You can download and
 
 ## 2. Change working path
 
-In file main.py at line 471 replace path to SteganoGAN ( fullpath_work ) by the path where you download my project.
+~~In file main.py at line 471 replace path to SteganoGAN ( fullpath_work ) by the path where you download my project.~~
 
-In file second_window.py at line 19 relace path to SteganoGAN ( fullpath_work ) by the path where you download my project.
+~~In file second_window.py at line 19 relace path to SteganoGAN ( fullpath_work ) by the path where you download my project.~~
+
+***New update !!*** Not need do that. 
 
 ## 3. How to use the interface
 
@@ -44,19 +46,19 @@ The interface includes the following function buttons and how it work:
 
 + Load image cover: Select the image you want to hide information on it. The direct path of the image will be displayed next to.
 
-	- Images will be saved by default in folder path **../SteganoGAN/research/**
+	- Images will be saved by default in folder path **../Data-Hidding-Using-GAN/research/**
 
 	- Images will be display under text: *Cover Image*
 	
 + Load model: Select the model you want use for hide. The direct path of the image will be displayed next to.
 
-	- Default all my pre-train model will be save in folder path **../SteganoGAN/models/**
+	- Default all my pre-train model will be save in folder path **../Data-Hidding-Using-GAN/models/**
 
 + Encoder: Doing hide with selected images and models.
 
 	- The images after embedding information will display under text: *Steganographic*
 
-	- And will be save in folder path **../SteganoGAN/result/-/**
+	- And will be save in folder path **../Data-Hidding-Using-GAN/result/-/**
 
 + Evalute: Doing evalution with images was emdedded. The parameter include:
 
@@ -72,7 +74,7 @@ The interface includes the following function buttons and how it work:
 
 + Enter Key: This button is required if the user has pressed Get Key above, the user will have to select the generated key through the Get Key button, enter the key, the information after decryption will be correct, otherwise the information can not readable.
 
-	- The key file will be save in folder path **../SteganoGAN/key/**
+	- The key file will be save in folder path **../Data-Hidding-Using-GAN/key/**
 
 Below Message encode is place to enter the information to be hidden (text).
 Below Message decode is where the decoded information will be displayed.
@@ -83,7 +85,7 @@ Below Message decode is where the decoded information will be displayed.
 
 	- The second empty place will be the place to display the path to the decoded txt file.
 
-	- The txt file will save default in folder path **../SteganoGAN/message/**
+	- The txt file will save default in folder path **../Data-Hidding-Using-GAN/message/**
 
 There are two options for hiding information for users: Hiding information as text or hiding information as images. Click to select the user mode you want to use.
 
@@ -100,11 +102,11 @@ In this interface there are the following buttons:
 + Open text: Make a selection of the txt file, that is the image in text format. The direct path of the image will be displayed next to.
 + Im2Tex: Doing convert image to text format.
 
-	- File text after converting from images will be saved in a folder with path **../SteganoGAN/text_decode/**
+	- File text after converting from images will be saved in a folder with path **../Data-Hidding-Using-GAN/text_decode/**
 
 + Tex2Im: Doing convert text to images format.
 
-	- The image after converting from text file will be saved in a folder with path **../SteganoGAN/image_decode/**
+	- The image after converting from text file will be saved in a folder with path **../Data-Hidding-Using-GAN/image_decode/**
 
 If the user accidentally presses exit this second window, before the user do the text-to-image conversion, the user needs to enter the size of the image to be restored with the following format:
 > w:{width} h:{height}
