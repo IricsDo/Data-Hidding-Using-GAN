@@ -16,7 +16,7 @@ Môi trường được sử dụng trong project được tạo bởi **Anacond
 	$ cd Data-Hidding-Using-GAN/
 	$ conda create -n myenv python=3.6
 	$ conda activate myenv
-	$ pip install -r requirement.txt
+	$ pip install -r requirements.txt
 ## 2. Thay đổi đường dẫn làm việc	
 ~~Trong *file main.py* ở **dòng 471** thay đường dẫn tới thư mục SteganoGAN được lưu (fullpath_work).~~
 
