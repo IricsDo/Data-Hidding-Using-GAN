@@ -20,6 +20,7 @@ Môi trường được sử dụng trong project được tạo bởi **Anacond
 ~~Trong *file main.py* ở **dòng 471** thay đường dẫn tới thư mục SteganoGAN được lưu (fullpath_work).~~
 
 ~~Trong *file second_window.py* ở **dòng 19** thay đường dẫn tới thư mục SteganoGAN lưu (fullpath_work).~~
+
 ***Cập nhật mới !*** Không cần thay đổi đường dẫn!.
 ## 3. Cách dùng giao diện
 
@@ -32,13 +33,13 @@ Sẽ thấy một giao diện xuất hiện giống như sau
 
 Giao diện gồm có các nút chức năng sau và cách hoạt động:
 + Load image cover: Thực hiện chọn ảnh muốn giấu thông tin vào đó. Đường dẫn trực tiếp của ảnh sẽ được hiển thị kế bên.
-	- Hình ảnh sẽ được lưu mặc định ở ***../SteganoGAN/research/***
+	- Hình ảnh sẽ được lưu mặc định ở ***../Data-Hidding-Using-GAN/research/***
 	- Hình ảnh sẽ được hiển thị bên dưới dòng chữ: Cover Image
 + Load model : Thực hiện chọn mô hình cho việc giấu thông tin. Đường dẫn trực tiếp của mô hình sẽ được hiển thị kế bên.
-	- Mặc định các pre-train sẽ được lưu ở ***../SteganoGAN/models/***
+	- Mặc định các pre-train sẽ được lưu ở ***../Data-Hidding-Using-GAN/models/***
 + Encoder : Thực hiện giấu tin với ảnh và mô hình đã chọn.
 	- Hình ảnh sau khi giấu tin sẽ được hiển thị ở bên dưới dòng chữ: Steganographic 
-	- Và được lưu ở thư mục có đường dẫn là ***../SteganoGAN/result/-/***
+	- Và được lưu ở thư mục có đường dẫn là ***../Data-Hidding-Using-GAN/result/-/***
 + Decoder : Thực hiện giải mã thông tin với ảnh vừa giấu.
 + Evaluate: Thực hiện đánh giá với ảnh đã được giấu thông tin. Các thông số đánh giá gồm:
 
@@ -53,7 +54,7 @@ Giao diện gồm có các nút chức năng sau và cách hoạt động:
 + Get Key  : Đây là chế độ tùy chọn, khi nhấn thông tin sẽ được mã hóa trước khi giấu.
 + Enter Key: Nút này là bắt buộc nếu người dùng đã nhấn Get Key ở trên, người dùng sẽ phải chọn khóa đã được tạo thông qua nút Get Key, nhập khóa vào thì thông tin sau khi giải mã mới chính xác, nếu không thông tin sẽ không thể đọc được.
 
-	- Tệp khóa sẽ được lưu ở thư mục có đường dẫn là ***../SteganoGAN/key/***
+	- Tệp khóa sẽ được lưu ở thư mục có đường dẫn là ***../Data-Hidding-Using-GAN/key/***
 	
 Bên dưới Message encode là nơi để nhập thông tin cần giấu (văn bản).
 
@@ -64,7 +65,7 @@ Bên dưới Message decode là nơi thông tin được giải mã sẽ hiển 
 
 	- Ô trống đầu tiên phía dưới là nơi hiển thị đường dẫn tới tệp txt muốn giấu.
 	- Ô trống thứ hai sẽ là nơi hiển thị đường dẫn tới tệp txt đã được giải mã.
-	- Tệp txt được lưu mặc định ở thư mục có đường dẫn là ***../SteganoGAN/message/***
+	- Tệp txt được lưu mặc định ở thư mục có đường dẫn là ***../Data-Hidding-Using-GAN/message/***
 
 Có hai tùy chọn chế độ giấu tin cho người dùng là giấu tin là văn bản hoặc giấu tin là hình ảnh. Click chuột để chọn chế độ người dùng muốn sử dụng.
 
@@ -81,9 +82,9 @@ Nhấn Open image: Xuất hiện một giao diện thứ hai giống như sau
 + Open image: Thực hiện chọn hình ảnh cần giấu. Đường dẫn trực tiếp của hình ảnh sẽ được hiển thị kế bên.
 + Open text: Thực hiện chọn tệp txt, đó chính là hình ảnh đang ở dạng văn bản. Đường dẫn trực tiếp của hình ảnh sẽ được hiển thị kế bên.
 + Im2Tex: Thực hiện chuyển đổi hình ảnh sang văn bản.
-	- Văn bản sau khi chuyển đổi từ  hình ảnh sẽ được lưu ở thư mục có đường dẫn là ***../SteganoGAN/text_decode/***
+	- Văn bản sau khi chuyển đổi từ  hình ảnh sẽ được lưu ở thư mục có đường dẫn là ***../Data-Hidding-Using-GAN/text_decode/***
 + Tex2Im: Thực hiện chuyển đổi văn bản sang hình ảnh.
-	- Hình ảnh sau khi chuyển đổi từ văn bản sẽ được lưu ở thư mục có đường dẫn là ***../SteganoGAN/image_decode/***
+	- Hình ảnh sau khi chuyển đổi từ văn bản sẽ được lưu ở thư mục có đường dẫn là ***../Data-Hidding-Using-GAN/image_decode/***
 
 Nếu người dùng lỡ nhấn thóat cửa số thứ hai này, trước khi người dùng thực hiện chuyển đổi từ văn bản sang hình ảnh, người dùng cần phải nhập kích thước của hình ảnh muốn khôi phục với định dạng như sau:
 
