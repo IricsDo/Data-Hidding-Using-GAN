@@ -40,9 +40,19 @@ class Window(Frame):
         self.status_key = False
         self.have_key = False
         self.hidden_image = False
-
+        
+        # Tao folder can thiet cho GUI
+        if not os.path.exists("key"):
+            os.makedirs(os.path.join(fullpath_work, "key"), exist_ok=True)
+        if not os.path.exists("message"):
+            os.makedirs(os.path.join(fullpath_work, "message"), exist_ok=True)
+        if not os.path.exists("result"):
+            os.makedirs(os.path.join(fullpath_work, "result"), exist_ok=True)
+            if not os.path.exists("result/_"):
+                os.makedirs(os.path.join(os.path.join(fullpath_work,"result"),  "_"), exist_ok=True)
+        
         # Tao logo
-        logo = Image.open('/home/duy/Downloads/logo.png')
+        logo = Image.open(os.path.join(os.path.join(fullpath_work, "images"), "logo.png"))
         self.photo_logo = ImageTk.PhotoImage(logo)
         self.lab_logo = Label(image= self.photo_logo)
         self.lab_logo.place(x= 1120, y= 38)
@@ -468,7 +478,7 @@ class Window(Frame):
 
 if __name__ == "__main__":
 
-    fullpath_work = '/home/duy/worksapce/SteganoGAN'
+    fullpath_work = os.getcwd()
     # Tao cua so GUI
     window = Tk()
     window.geometry("1280x720")

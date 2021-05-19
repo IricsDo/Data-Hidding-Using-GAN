@@ -16,12 +16,18 @@ class Sub_window(Frame):
 
     def init_sub_window(self):
 
-        self.fullpath_work_secon = '/home/duy/worksapce/SteganoGAN'
+        self.fullpath_work_secon = os.getcwd()
         self.subwindow = self.sub_master
         self.master.title("Image Hidden Mode")
         self.subfileimage = StringVar()
         self.subfiletxt = StringVar()
         self.sizeOfimg = StringVar()
+        
+        # Tao folder can thiet cho GUI
+        if not os.path.exists("image_decode"):
+            os.makedirs(os.path.join(self.fullpath_work_secon, "image_decode"), exist_ok=True)
+        if not os.path.exists("text_decode"):
+            os.makedirs(os.path.join(self.fullpath_work_secon, "text_decode"), exist_ok=True)
 
         # Tao cho de show image
         location_image = Entry(self.subwindow, state= DISABLED)
