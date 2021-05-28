@@ -8,3 +8,5 @@ reedsolo==0.3
 opencv-python==4.5.1.48
 opencv-contrib-python==4.5.1.48
 steganogan
+gunicorn==20.0.4
+streamlit
