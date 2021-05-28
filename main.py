@@ -23,7 +23,7 @@ class Window(Frame):
 
     def init_window(self):
 
-        self.master.title("Wellcome")
+        self.master.title("Data Hiden Using GANs")
         self.inputfileimage = StringVar()
         self.inputfilemodel = StringVar()
         self.timeprocess = StringVar()
