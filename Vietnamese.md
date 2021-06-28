@@ -34,10 +34,10 @@ Sẽ thấy một giao diện xuất hiện giống như sau
 
 Giao diện gồm có các nút chức năng sau và cách hoạt động:
 + Load image cover: Thực hiện chọn ảnh muốn giấu thông tin vào đó. Đường dẫn trực tiếp của ảnh sẽ được hiển thị kế bên.
-	- Hình ảnh sẽ được lưu mặc định ở ***../Data-Hidding-Using-GAN/research/***
+	- Hình ảnh sẽ được lưu mặc định ở thư mục ***../Data-Hidding-Using-GAN/research/***
 	- Hình ảnh sẽ được hiển thị bên dưới dòng chữ: Cover Image
 + Load model : Thực hiện chọn mô hình cho việc giấu thông tin. Đường dẫn trực tiếp của mô hình sẽ được hiển thị kế bên.
-	- Mặc định các pre-train sẽ được lưu ở ***../Data-Hidding-Using-GAN/models/***
+	- Mặc định các pre-train sẽ được lưu ở thư mục***../Data-Hidding-Using-GAN/models/***
 + Encoder : Thực hiện giấu tin với ảnh và mô hình đã chọn.
 	- Hình ảnh sau khi giấu tin sẽ được hiển thị ở bên dưới dòng chữ: Steganographic 
 	- Và được lưu ở thư mục có đường dẫn là ***../Data-Hidding-Using-GAN/result/-/***
