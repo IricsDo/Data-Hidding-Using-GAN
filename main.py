@@ -42,6 +42,10 @@ class Window(Frame):
         self.hidden_image = False
         
         # Tao folder can thiet cho GUI
+        if not os.path.exists("image_decode"):
+            os.makedirs(os.path.join(fullpath_work, "image_decode"), exist_ok=True)
+        if not os.path.exists("text_decode"):
+            os.makedirs(os.path.join(fullpath_work, "text_decode"), exist_ok=True)
         if not os.path.exists("key"):
             os.makedirs(os.path.join(fullpath_work, "key"), exist_ok=True)
         if not os.path.exists("message"):
