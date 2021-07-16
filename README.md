@@ -27,10 +27,6 @@ The environment use in the project was created by Anaconda. You can download and
 
 ## 2. Change working path
 
-~~In file main.py at line 471 replace path to SteganoGAN ( fullpath_work ) by the path where you download my project.~~
-
-~~In file second_window.py at line 19 relace path to SteganoGAN ( fullpath_work ) by the path where you download my project.~~
-
 ***New update !!*** Not need do that. 
 
 ## 3. How to use the interface
