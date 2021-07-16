@@ -260,20 +260,25 @@ class Window(Frame):
     def Load_file(self):
 
         txt_selected = filedialog.askopenfilename(title= 'Choose file ',initialdir=fullpath_work, filetypes= (("All","*.txt"),("TXT files","*.txt")))
+
         try:
+
             if os.path.exists(txt_selected):
                 self.txt_in.set(os.path.basename(txt_selected))
                 with open(txt_selected, 'r') as m:
                     self.mess = m.read()
                     self.status_file = True
                 m.close()
+
         except Exception as e:
+
             print(e)
             tkinter.messagebox.showwarning("Notification", "Can not open file")
 
     def Load_image_encoder(self):
 
         try:
+
             self.image_selected = filedialog.askopenfilename(title= 'Choose image encoder',initialdir=fullpath_work, filetypes= (("All","*.png"),("PNG files","*.png")))
             self.inputfileimage.set(self.image_selected)
             # Hien thi hinh anh input
@@ -283,7 +288,9 @@ class Window(Frame):
             self.photo_input = ImageTk.PhotoImage(image_resize)
             self.lab_input = Label(image= self.photo_input)
             self.lab_input.place(x= 18, y= 38)
+
         except Exception as e:
+
             print(e)
             tkinter.messagebox.showerror("Error", "Can not open image")
 
@@ -302,8 +309,12 @@ class Window(Frame):
     def Encoder_Button(self):
         
         self.name_save =  str(datetime.datetime.now()).replace(" ", "@") + ".png"
-        self.path_img_out = os.path.join(fullpath_work, os.path.join('result/_', self.name_save))
+        #self.name_save = self.name_save.replace(":", "#") Using this comment if you run in window OS
+
+        self.path_img_out = os.path.join(fullpath_work, os.path.join("result/_", self.name_save))
+
         try:
+
             if len(self.mode_var.get()) == 0:
                 tkinter.messagebox.showwarning("Warning", "Must select the mode using")
             
@@ -363,6 +374,7 @@ class Window(Frame):
                 print("You do not choose hidden mode")
 
         except Exception as e:
+
             print(e)
             tkinter.messagebox.showerror("Error", "Can not encode")
 
@@ -380,18 +392,20 @@ class Window(Frame):
                 message = temp.decode("utf-8")
             else:
                 pass
+
             self.timeprocess.set(end_time - start_time)
+
             if not self.status_file:
-       
                 self.message_decode.set(message)
+
             else:
                 if self.hidden_image:
                     name_file_out = os.path.join("text_decode", self.name_save + ".txt")
              
                 else:
-
                     name_file_out = os.path.join("message", self.name_save + ".txt")
                     self.txt_out.set(self.name_save + ".txt")
+
                 with open(name_file_out, 'w') as f:
                     f.write(message)
                 f.close()
@@ -436,6 +450,7 @@ class Window(Frame):
     def Key_Button(self):
 
         try:
+
             self.key = Fernet.generate_key()
             print("Your key: ", self.key)
             key_file_out = os.path.join("key", str(datetime.datetime.now()).replace(" ", "@") + ".txt")
@@ -444,6 +459,7 @@ class Window(Frame):
             f.close()
             tkinter.messagebox.showinfo("Notification", "Key creation was successful")
             self.status_key = True
+
         except Exception as e:
             print(e)
 
@@ -483,6 +499,7 @@ class Window(Frame):
 if __name__ == "__main__":
 
     fullpath_work = os.getcwd()
+
     # Tao cua so GUI
     window = Tk()
     window.geometry("1280x720")

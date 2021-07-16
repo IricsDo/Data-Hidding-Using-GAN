@@ -1,8 +1,8 @@
 Pillow==8.2.0
 cryptography==3.4.7
 imageio==2.9.0
-torch==1.0.0
-torchvision==0.2.1
+#torch==1.0.0
+#torchvision==0.2.1
 tqdm==4.59.0
 reedsolo==0.3
 opencv-python==4.5.1.48
@@ -10,3 +10,6 @@ opencv-contrib-python==4.5.1.48
 steganogan
 gunicorn==20.0.4
 streamlit
+
+#if install torch error try
+#conda install pytorch==1.0.0 torchvision==0.2.1 -c pytorch
