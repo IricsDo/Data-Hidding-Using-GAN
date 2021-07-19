@@ -179,3 +179,6 @@ class Sub_window(Frame):
     def get_name_txt_file(self):
 
         return self.txt_file_out
+
+# Create by DoDuy
+# email: duy.do147@hcmut.edu.vn

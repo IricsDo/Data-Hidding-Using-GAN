@@ -309,7 +309,7 @@ class Window(Frame):
     def Encoder_Button(self):
         
         self.name_save =  str(datetime.datetime.now()).replace(" ", "@") + ".png"
-        #self.name_save = self.name_save.replace(":", "#") Using this comment if you run in window OS
+        # self.name_save = self.name_save.replace(":", "#") #Using this comment if you run in window OS
 
         self.path_img_out = os.path.join(fullpath_work, os.path.join("result/_", self.name_save))
 
