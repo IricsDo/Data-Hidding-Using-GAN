@@ -13,3 +13,4 @@ streamlit
 
 #if install torch error try
 #conda install pytorch==1.0.0 torchvision==0.2.1 -c pytorch
+#pip install torch==1.0.0 torchvision==0.2.1 -f https://download.pytorch.org/whl/torch_stable.html
